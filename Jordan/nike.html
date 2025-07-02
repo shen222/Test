@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan 34 - Heritage</title>
+ <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@350&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'oswald', sans-serif;
+    }html, body {
+  scroll-behavior: smooth;
+  background-color: #f0f1f5;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  position: sticky;
+  top: 0;
+  background:transparent;
+  z-index: 10;
+}
+
+.nav-left img {
+  width: 100px;
+}
+
+.oval {
+  height: 500px;
+  width: 10000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(146, 144, 144);
+  border-radius: 90%;
+  transform: rotate(-0.15turn);
+  z-index: 0;
+}
+
+.nav-center a,
+.nav-right {
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 40px;
+  padding-left: 300px;
+}
+
+.nav-right {
+  font-size: 30px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.section h1 {
+  font-size: 300px;
+  letter-spacing: 8px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+}
+
+.section h2 {
+  font-size: 300px;
+  letter-spacing: 8px;
+  color: #e2e2e2;
+  position: absolute;
+  z-index: 1;
+  bottom: 20%;
+}
+
+.shoe-img {
+  width: 100%;
+  max-width: 600px;
+  z-index: 1;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.desc {
+  max-width: 600px;
+  margin-top: 100px;
+  z-index: 1;
+}
+
+.desc h2 {
+  font-size: 28px;
+}
+
+.desc p {
+  color: #c94f4f;
+  margin-top: 10px;
+}
+
+.shop-btn {
+  margin-top: 20px;
+  background-color: #ff5e5e;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.socials {
+  position: fixed;
+  top: 40%;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+.socials a img {
+  width: 24px;
+}
+
+.dots {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 10px 0;
+  transition: background 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.dot:hover::after {
+  content: attr(data-label);
+  position: absolute;
+  right: 120%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.dot.active {
+  background: #f75f5f;
+}
+
+@media (max-width: 768px) {
+  .section h1 {
+    font-size: 40px;
+  }
+  .shoe-img {
+    width: 80%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="nav-bar">
+    <div class="nav-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike logo">
+    </div>
+    <div class="nav-center">
+      <a href="#section1">HOME</a>
+      <a href="#section2">JORDAN</a>
+      <a href="#section3">SHOP</a>
+    </div>
+    <div class="nav-right">☰</div>
+  </header>  <div class="socials">
+    <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"></a>
+    <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"></a>
+    <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Twitter"></a>
+  </div>  <div class="dots">
+    <div class="dot" data-label="Home" data-index="0"></div>
+    <div class="dot" data-label="Jordan" data-index="1"></div>
+    <div class="dot" data-label="Shop" data-index="2"></div>
+  </div>  <section id="section1" class="section">
+    <h1>HERITAGE </h1>
+    <h2>XXXIV</h2>
+    <div class="oval"></div>
+    <img class="shoe-img" src="./images/--BQ3381_400_E_PREM.png" alt="Jordan 34" />
+    <div class="desc">
+      <h3>JORDAN 34</h3>
+      <p>AJ XXXIV は、ジョーダン史上最も軽量なゲームシューズの 1 つで、あらゆる方向への爆発力、ダイナミックなコントロール、応答性を提供します</p>
+      <button class="shop-btn" onclick="scrollToShop()">SHOP NOW</button>
+    </div>
+  </section>  <section id="section2" class="section">
+    <h1>JORDAN SERIES</h1>
+    <p class="desc">ジョーダン スニーカーの伝統と、各モデルがゲームにどのような革命をもたらしたかを探ります</p>
+  </section>  <section id="section3" class="section">
+    <h1>SHOP NOW</h1>
+    <p class="desc">当社の全コレクションを閲覧し、今すぐご購入ください</p>
+  </section>  <script>
+    function scrollToShop() {
+      document.getElementById('section3').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // ScrollReveal Animations
+    ScrollReveal().reveal('.nav-bar', {
+      duration: 1000,
+      origin: 'top',
+      distance: '50px'
+    });
+
+    ScrollReveal().reveal('.social-icon', {
+      duration: 1000,
+      origin: 'left',
+      distance: '20px',
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.section h1', {
+      duration: 1000,
+      origin: 'top',
+      distance: '50px',
+      reset: true
+    });
+
+    ScrollReveal().reveal('.shoe-img', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '40px',
+      delay: 200,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.desc', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '60px',
+      delay: 400,
+      reset: true
+    });
+
+    // Dot Navi
+    const dots = document.querySelectorAll('.dot');
+    const sections = document.querySelectorAll('.section');
+
+    function updateDots() {
+      let index = sections.length;
+      while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+      dots.forEach(dot => dot.classList.remove('active'));
+      if (dots[index]) dots[index].classList.add('active');
+    }
+
+    updateDots();
+    window.addEventListener('scroll', updateDots);
+
+    //  clickable 
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        sections[index].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script></body>
+</html>
+  
